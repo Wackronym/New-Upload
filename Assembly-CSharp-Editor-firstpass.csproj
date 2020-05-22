@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{04A72179-87A5-B0E3-A543-5875165722FC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp-Editor-firstpass</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_3;UNITY_5_6;UNITY_5;UNITY_PURCHASING;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_ANDROID;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_2_0;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE;BAYATGAMES;BAYATGAMES_SAVEGAMEPRO;UNITY_HAS_GOOGLEVR;ENABLE_DUCK_TYPING</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>D:/Unity 5.6.3f1/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>D:/Unity 5.6.3f1/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Plugins\Editor\JetBrains\Unity3DRider.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\GenerateOverrideMethod.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\GeneratePropertyForField.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\GenerateUnityMagicMethod.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Scripts\AboutScriptInspector.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Scripts\BooParser.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Scripts\CodeSnippets.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Scripts\CsGrammar.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Scripts\CsParser.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Scripts\FGCodeWindow.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Scripts\FGConsole.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Scripts\FGDefaultAssetInspector.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Scripts\FGFindInFiles.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Scripts\FGGrammar.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Scripts\FGKeyboardHook.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Scripts\FGListPopup.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Scripts\FGParser.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Scripts\FGPopupWindow.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Scripts\FGTextBuffer.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Scripts\FGTextBufferManager.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Scripts\FGTextEditor.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Scripts\FGTextInspector.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Scripts\FGTooltip.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Scripts\FGTypeSystem.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Scripts\FindReplaceWindow.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Scripts\FindResultsWindow.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Scripts\GoToLineWindow.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Scripts\JsParser.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Scripts\SISettings.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Scripts\ScriptInspector.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Scripts\ShaderInspector.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Scripts\ShaderParser.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Scripts\TabSwitcher.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Scripts\TangoColors.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Scripts\UnitySymbols.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Si3 Extensions\Si3 Immediate Window.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Si3 Extensions\Si3 Open Any File.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Si3 Extensions\Si3 Open File.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Si3 Extensions\Si3 UnityEventDrawer.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Themes\Darcula.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Themes\MDBrown.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Themes\MDBrownDark.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Themes\Monokai.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Themes\SolarizedDark.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Themes\SolarizedLight.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Themes\SonOfObsidian.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Themes\TangoDark_Oblivion.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Themes\TangoLight.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Themes\Theme.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Themes\VSCodeMonokai.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Themes\VSDarkWithResharper.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Themes\VSDarkWithVAX.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Themes\VSLightWithVAX.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Themes\VisualStudio.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Themes\VisualStudioDark.cs" />
+     <Compile Include="Assets\Plugins\Editor\ScriptInspector3\Themes\Xcode.cs" />
+     <Compile Include="Assets\Plugins\GitHub\Editor\ExtensionLoader.cs" />
+     <Compile Include="Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\namespace.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
+     <None Include="Assets\MaterialUI\README.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\SI Changes.txt" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\log.txt" />
+     <None Include="Assets\Plugins\GitHub\Editor\credits.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\case.txt" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\do.txt" />
+     <None Include="Assets\BayatGames\SaveGamePro\Editor\Resources\SaveGameTypeTemplate.cs.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\_readme.txt" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\enum.txt" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\else.txt" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\base.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\get.txt" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\EditorResources\Fonts\SourceCodePro-Legal.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\if.txt" />
+     <None Include="Assets\MaterialUI\Fonts\Roboto\NOTICE.txt" />
+     <None Include="Assets\MaterialUI\Materials\SignedDistanceFieldUI.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\struct.txt" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\for.txt" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\catch.txt" />
+     <None Include="Assets\MaterialUI\Fonts\Resources\Material Design Icons\LICENSE.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\class.txt" />
+     <None Include="Assets\MaterialUI\CHANGELOG.txt" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\foreach.txt" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\interface.txt" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\switch.txt" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\finally.txt" />
+     <None Include="Assets\BayatGames\SaveGamePro\Editor\Resources\SaveGameTypeManagerTemplate.cs.txt" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\try.txt" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\while.txt" />
+     <None Include="Assets\Plugins\GitHub\Editor\eula.txt" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\nn.txt" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\set.txt" />
+ <Reference Include="UnityEditor.Advertisements">
+ <HintPath>D:/Unity 5.6.3f1/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>D:/Unity 5.6.3f1/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>D:/Unity 5.6.3f1/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>D:/Unity 5.6.3f1/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Networking">
+ <HintPath>D:/Unity 5.6.3f1/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.TestRunner">
+ <HintPath>D:/Unity 5.6.3f1/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>D:/Unity 5.6.3f1/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>D:/Unity 5.6.3f1/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.TreeEditor">
+ <HintPath>D:/Unity 5.6.3f1/Unity/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>D:/Unity 5.6.3f1/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Analytics">
+ <HintPath>D:/Unity 5.6.3f1/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/Editor/UnityEditor.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.HoloLens">
+ <HintPath>D:/Unity 5.6.3f1/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>D:/Unity 5.6.3f1/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Purchasing">
+ <HintPath>D:/Unity 5.6.3f1/Unity/Editor/Data/UnityExtensions/Unity/UnityPurchasing/UnityEngine.Purchasing.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Purchasing">
+ <HintPath>D:/Unity 5.6.3f1/Unity/Editor/Data/UnityExtensions/Unity/UnityPurchasing/Editor/UnityEditor.Purchasing.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.VR">
+ <HintPath>D:/Unity 5.6.3f1/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>D:/Unity 5.6.3f1/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>D:/Unity 5.6.3f1/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Android.Extensions">
+ <HintPath>D:/Unity 5.6.3f1/Unity/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+ <HintPath>D:/Unity 5.6.3f1/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="Ionic.Zip">
+ <HintPath>D:/Freelance/WACKRONYM Android/Assets/MaterialUI/Utils/Editor/UnityZip/Ionic.Zip.dll</HintPath>
+ </Reference>
+ <Reference Include="JsonFx.Json">
+ <HintPath>D:/Freelance/WACKRONYM Android/Assets/Plugins/JsonFx.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="Mono.Data.Sqlite">
+ <HintPath>D:/Freelance/WACKRONYM Android/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Data">
+ <HintPath>D:/Freelance/WACKRONYM Android/Assets/Plugins/System.Data.dll</HintPath>
+ </Reference>
+ <Reference Include="AsyncBridge.Net35">
+ <HintPath>D:/Freelance/WACKRONYM Android/Assets/Plugins/GitHub/Editor/AsyncBridge.Net35.dll</HintPath>
+ </Reference>
+ <Reference Include="GitHub.Api">
+ <HintPath>D:/Freelance/WACKRONYM Android/Assets/Plugins/GitHub/Editor/GitHub.Api.dll</HintPath>
+ </Reference>
+ <Reference Include="GitHub.Logging">
+ <HintPath>D:/Freelance/WACKRONYM Android/Assets/Plugins/GitHub/Editor/GitHub.Logging.dll</HintPath>
+ </Reference>
+ <Reference Include="GitHub.Unity">
+ <HintPath>D:/Freelance/WACKRONYM Android/Assets/Plugins/GitHub/Editor/GitHub.Unity.dll</HintPath>
+ </Reference>
+ <Reference Include="GitHub.UnityShim">
+ <HintPath>D:/Freelance/WACKRONYM Android/Assets/Plugins/GitHub/Editor/GitHub.UnityShim.dll</HintPath>
+ </Reference>
+ <Reference Include="ReadOnlyCollectionsInterfaces">
+ <HintPath>D:/Freelance/WACKRONYM Android/Assets/Plugins/GitHub/Editor/ReadOnlyCollectionsInterfaces.dll</HintPath>
+ </Reference>
+ <Reference Include="sfw.net">
+ <HintPath>D:/Freelance/WACKRONYM Android/Assets/Plugins/GitHub/Editor/sfw.net.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading">
+ <HintPath>D:/Freelance/WACKRONYM Android/Assets/Plugins/GitHub/Editor/System.Threading.dll</HintPath>
+ </Reference>
+ <Reference Include="TextMeshPro-5.6-1.0.56-Editor">
+ <HintPath>D:/Freelance/WACKRONYM Android/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-5.6-1.0.56-Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="TextMeshPro-5.6-1.0.56-Runtime">
+ <HintPath>D:/Freelance/WACKRONYM Android/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-5.6-1.0.56-Runtime.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{9CD111D9-C17C-33F8-715A-39E656044BB6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_3;UNITY_5_6;UNITY_5;UNITY_PURCHASING;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_ANDROID;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_2_0;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE;BAYATGAMES;BAYATGAMES_SAVEGAMEPRO;UNITY_HAS_GOOGLEVR</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>D:/Unity 5.6.3f1/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>D:/Unity 5.6.3f1/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Plugins\AppLovin\AppLovin.cs" />
+     <Compile Include="Assets\Plugins\AppLovin\AppLovinEvents.cs" />
+     <Compile Include="Assets\Plugins\UnityChannel\XiaomiSupport\AppStoreSettings.cs" />
+     <Compile Include="Assets\Plugins\UnityPurchasing\script\CodelessIAPStoreListener.cs" />
+     <Compile Include="Assets\Plugins\UnityPurchasing\script\ComboBox.cs" />
+     <Compile Include="Assets\Plugins\UnityPurchasing\script\Demo\DemoInventory.cs" />
+     <Compile Include="Assets\Plugins\UnityPurchasing\script\IAPButton.cs" />
+     <Compile Include="Assets\Plugins\UnityPurchasing\script\IAPConfigurationHelper.cs" />
+     <Compile Include="Assets\Plugins\UnityPurchasing\script\IAPDemo.cs" />
+     <Compile Include="Assets\Plugins\UnityPurchasing\script\IAPDemoProductUI.cs" />
+     <Compile Include="Assets\Plugins\UnityPurchasing\script\IAPListener.cs" />
+     <Compile Include="Assets\Plugins\UnityPurchasing\script\PurchasingCheck.cs" />
+     <None Include="Assets\WellFired\shared\Installer Data\changelist.txt" />
+     <None Include="Assets\Plugins\UnityPurchasing\Android\proguard-user.txt.OPTIONAL.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
+     <None Include="Assets\WellFired\urecord\Installer Data\upgradenotes.txt" />
+     <None Include="Assets\WellFired\shared\Uncompiled\Resources\Transitions\WellFiredWipeLeft.shader" />
+     <None Include="Assets\Scripts\JSON\readme.txt" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\namespace.txt" />
+     <None Include="Assets\Best HTTP (Pro)\BestHTTP\SecureProtocol\License.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
+     <None Include="Assets\WellFired\urecord\Installer Data\version.txt" />
+     <None Include="Assets\WellFired\shared\Uncompiled\Resources\Transitions\WellFiredDissolve.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
+     <None Include="Assets\MaterialUI\README.txt" />
+     <None Include="Assets\WellFired\shared\Uncompiled\Resources\Transitions\WellFiredWipeDown.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
+     <None Include="Assets\BloomPro\Demo\Skybox.shader" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\SI Changes.txt" />
+     <None Include="Assets\BloomPro\Demo\Reflect-Glossy.shader" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\log.txt" />
+     <None Include="Assets\Best HTTP (Pro)\link_android_subset.xml" />
+     <None Include="Assets\Shaders\OutlineNew.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\case.txt" />
+     <None Include="Assets\SuperScrollView\Scripts\Version 2.2.txt" />
+     <None Include="Assets\Virtual KeyBoard\KeyBoard\virtualkeyboard.txt" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\do.txt" />
+     <None Include="Assets\VRKeyboard\README.txt" />
+     <None Include="Assets\BayatGames\SaveGamePro\Editor\Resources\SaveGameTypeTemplate.cs.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
+     <None Include="Assets\Best HTTP (Pro)\ReleaseNotes.txt" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\_readme.txt" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\enum.txt" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\else.txt" />
+     <None Include="Assets\PlayServicesResolver\proguard-messaging-workaround.txt" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\base.txt" />
+     <None Include="Assets\WellFired\shared\Uncompiled\Resources\Transitions\WellFiredWipeUp.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
+     <None Include="Assets\BloomPro\Shaders\Resources\FxPro.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\get.txt" />
+     <None Include="Assets\Resources\adconfiguration.txt" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\EditorResources\Fonts\SourceCodePro-Legal.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\if.txt" />
+     <None Include="Assets\WellFired\urecord\Installer Data\changelist.txt" />
+     <None Include="Assets\Resources\InterstitialZone.txt" />
+     <None Include="Assets\MaterialUI\Fonts\Roboto\NOTICE.txt" />
+     <None Include="Assets\MaterialUI\Materials\SignedDistanceFieldUI.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\struct.txt" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\for.txt" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\catch.txt" />
+     <None Include="Assets\MaterialUI\Fonts\Resources\Material Design Icons\LICENSE.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+     <None Include="Assets\BloomPro\Shaders\Resources\SeparableBlur.cginc" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\class.txt" />
+     <None Include="Assets\Plugins\UnityPurchasing\script\link.xml" />
+     <None Include="Assets\MaterialUI\CHANGELOG.txt" />
+     <None Include="Assets\Plugins\Android\GoogleMobileAdsPlugin\AndroidManifest.xml" />
+     <None Include="Assets\Resources\adconfig.txt" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\foreach.txt" />
+     <None Include="Assets\Plugins\AppLovin\AppLovin Readme.txt" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\interface.txt" />
+     <None Include="Assets\PlayServicesResolver\proguard-unity.txt" />
+     <None Include="Assets\BloomPro\Shaders\Resources\FxProTap.shader" />
+     <None Include="Assets\WellFired\shared\Installer Data\version.txt" />
+     <None Include="Assets\WellFired\shared\Uncompiled\Resources\Transitions\WellFiredWipeRight.shader" />
+     <None Include="Assets\WellFired\shared\Installer Data\upgradenotes.txt" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\switch.txt" />
+     <None Include="Assets\GoogleMobileAds\Editor\GoogleMobileAdsDependencies.xml" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\finally.txt" />
+     <None Include="Assets\Shaders\Outline.shader" />
+     <None Include="Assets\BloomPro\Shaders\Resources\BloomPro.shader" />
+     <None Include="Assets\BayatGames\SaveGamePro\Editor\Resources\SaveGameTypeManagerTemplate.cs.txt" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\try.txt" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\while.txt" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\nn.txt" />
+     <None Include="Assets\Plugins\Editor\ScriptInspector3\CodeSnippets\set.txt" />
+     <None Include="Assets\PlayServicesResolver\Editor\play-services-resolver_v1.2.59.0.txt" />
+     <None Include="Assets\Best HTTP (Pro)\link.xml" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>D:/Unity 5.6.3f1/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>D:/Unity 5.6.3f1/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>D:/Unity 5.6.3f1/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>D:/Unity 5.6.3f1/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>D:/Unity 5.6.3f1/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>D:/Unity 5.6.3f1/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Purchasing">
+ <HintPath>D:/Unity 5.6.3f1/Unity/Editor/Data/UnityExtensions/Unity/UnityPurchasing/UnityEngine.Purchasing.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>D:/Unity 5.6.3f1/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="JsonFx.Json">
+ <HintPath>D:/Freelance/WACKRONYM Android/Assets/Plugins/JsonFx.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="Mono.Data.Sqlite">
+ <HintPath>D:/Freelance/WACKRONYM Android/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Data">
+ <HintPath>D:/Freelance/WACKRONYM Android/Assets/Plugins/System.Data.dll</HintPath>
+ </Reference>
+ <Reference Include="ChannelPurchase">
+ <HintPath>D:/Freelance/WACKRONYM Android/Assets/Plugins/UnityChannel/ChannelPurchase.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityStore">
+ <HintPath>D:/Freelance/WACKRONYM Android/Assets/Plugins/UnityChannel/UnityStore.dll</HintPath>
+ </Reference>
+ <Reference Include="Editor">
+ <HintPath>D:/Freelance/WACKRONYM Android/Assets/Plugins/UnityPurchasing/Bin/Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Purchasing.Common">
+ <HintPath>D:/Freelance/WACKRONYM Android/Assets/Plugins/UnityPurchasing/Bin/Purchasing.Common.dll</HintPath>
+ </Reference>
+ <Reference Include="Stores">
+ <HintPath>D:/Freelance/WACKRONYM Android/Assets/Plugins/UnityPurchasing/Bin/Stores.dll</HintPath>
+ </Reference>
+ <Reference Include="Apple">
+ <HintPath>D:/Freelance/WACKRONYM Android/Assets/Plugins/UnityPurchasing/Bin/Apple/Apple.dll</HintPath>
+ </Reference>
+ <Reference Include="FacebookStore">
+ <HintPath>D:/Freelance/WACKRONYM Android/Assets/Plugins/UnityPurchasing/Bin/Facebook/FacebookStore.dll</HintPath>
+ </Reference>
+ <Reference Include="Security">
+ <HintPath>D:/Freelance/WACKRONYM Android/Assets/Plugins/UnityPurchasing/Bin/Security/live/Security.dll</HintPath>
+ </Reference>
+ <Reference Include="Tizen">
+ <HintPath>D:/Freelance/WACKRONYM Android/Assets/Plugins/UnityPurchasing/Bin/Tizen/Tizen.dll</HintPath>
+ </Reference>
+ <Reference Include="winrt">
+ <HintPath>D:/Freelance/WACKRONYM Android/Assets/Plugins/UnityPurchasing/winrt/winrt.dll</HintPath>
+ </Reference>
+ <Reference Include="TextMeshPro-5.6-1.0.56-Editor">
+ <HintPath>D:/Freelance/WACKRONYM Android/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-5.6-1.0.56-Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="TextMeshPro-5.6-1.0.56-Runtime">
+ <HintPath>D:/Freelance/WACKRONYM Android/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-5.6-1.0.56-Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="sharedRuntime">
+ <HintPath>D:/Freelance/WACKRONYM Android/Assets/WellFired/shared/Compiled/Runtime/sharedRuntime.dll</HintPath>
+ </Reference>
+ <Reference Include="urecordRuntime">
+ <HintPath>D:/Freelance/WACKRONYM Android/Assets/WellFired/urecord/Compiled/Runtime/urecordRuntime.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
